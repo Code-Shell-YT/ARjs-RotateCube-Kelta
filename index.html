@@ -1,0 +1,21 @@
+<!doctype HTML>
+<html>
+<script src="ARjs/aframe.min.js"></script>
+<script src="ARjs/aframe-extras.loaders.min.js"></script>
+<script src="ARjs/aframe-ar.js"> </script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded >
+		<a-marker preset="hiro">
+			<a-box position='0 1 0' material='color: orange;'>
+				<a-animation attribute="rotation"
+					dur="2000"
+					from="0 0 0"
+					to="360 0 0"
+					repeat="indefinite">
+				</a-animation>
+			</a-box>
+		</a-marker>
+		<a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
